@@ -1,0 +1,131 @@
+.
+├── .git
+│   ├── HEAD
+│   ├── config
+│   ├── description
+│   ├── hooks
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── push-to-checkout.sample
+│   │   └── update.sample
+│   ├── index
+│   ├── info
+│   │   └── exclude
+│   ├── logs
+│   │   ├── HEAD
+│   │   └── refs
+│   │       ├── heads
+│   │       │   └── master
+│   │       └── remotes
+│   │           └── origin
+│   │               └── HEAD
+│   ├── objects
+│   │   ├── 13
+│   │   │   └── 566b81b018ad684f3a35fee301741b2734c8f4
+│   │   ├── 35
+│   │   │   └── eb1ddfbbc029bcab630581847471d7f238ec53
+│   │   ├── 46
+│   │   │   └── d71c5c0fe4b93b84e859a85cf97e622436eb48
+│   │   ├── 53
+│   │   │   └── 476efa2f54b6b4d90af89da5a31eb691cff57f
+│   │   ├── 71
+│   │   │   └── 2ab9d985c20018a0c97b93d2148ac1ffe588a5
+│   │   ├── 88
+│   │   │   └── b2dfe07dbbd34cee17e9523fd07de2d4206ef3
+│   │   ├── a5
+│   │   │   └── 5e7a179bde3e4e772c29c0c85e53354aa54618
+│   │   ├── e7
+│   │   │   └── a827b9cc31b88153d8d05dd592ca7c98ec77ec
+│   │   ├── info
+│   │   └── pack
+│   │       ├── pack-9e6bd459b0549d090e631d6088fac04f21b37439.idx
+│   │       └── pack-9e6bd459b0549d090e631d6088fac04f21b37439.pack
+│   ├── packed-refs
+│   └── refs
+│       ├── heads
+│       │   └── master
+│       ├── remotes
+│       │   └── origin
+│       │       └── HEAD
+│       └── tags
+├── .idea
+│   ├── .gitignore
+│   ├── codeStyles
+│   │   └── codeStyleConfig.xml
+│   ├── compiler.xml
+│   ├── dataSources
+│   │   ├── 10d12a05-ee16-40bd-8701-a7d2c83a4290
+│   │   │   └── storage_v2
+│   │   │       └── _src_
+│   │   │           └── schema
+│   │   │               ├── information_schema.FNRwLQ.meta
+│   │   │               ├── my_first_project_db.hno3Jg.meta
+│   │   │               ├── mysql.osA4Bg.meta
+│   │   │               ├── performance_schema.kIw0nw.meta
+│   │   │               └── sys.zb4BAA.meta
+│   │   └── 10d12a05-ee16-40bd-8701-a7d2c83a4290.xml
+│   ├── dataSources.local.xml
+│   ├── dataSources.xml
+│   ├── jarRepositories.xml
+│   ├── misc.xml
+│   ├── vcs.xml
+│   └── workspace.xml
+├── pom.xml
+├── project_structure.txt
+├── src
+│   ├── main
+│   │   └── java
+│   │       └── jm
+│   │           └── task
+│   │               └── core
+│   │                   └── jdbc
+│   │                       ├── dao
+│   │                       │   ├── UserDao.java
+│   │                       │   ├── UserDaoHibernateImpl.java
+│   │                       │   └── UserDaoJDBCImpl.java
+│   │                       ├── model
+│   │                       │   └── User.java
+│   │                       ├── service
+│   │                       │   ├── UserService.java
+│   │                       │   └── UserServiceImpl.java
+│   │                       └── util
+│   │                           ├── Main.java
+│   │                           └── Util.java
+│   └── test
+│       └── java
+│           └── UserServiceTest.java
+└── target
+    ├── classes
+    │   ├── Main.class
+    │   └── jm
+    │       └── task
+    │           └── core
+    │               └── jdbc
+    │                   ├── dao
+    │                   │   ├── UserDao.class
+    │                   │   ├── UserDaoHibernateImpl.class
+    │                   │   └── UserDaoJDBCImpl.class
+    │                   ├── model
+    │                   │   └── User.class
+    │                   ├── service
+    │                   │   ├── UserService.class
+    │                   │   └── UserServiceImpl.class
+    │                   └── util
+    │                       └── Util.class
+    ├── generated-sources
+    │   └── annotations
+    ├── generated-test-sources
+    │   └── test-annotations
+    └── test-classes
+        └── UserServiceTest.class
+
+60 directories, 69 files

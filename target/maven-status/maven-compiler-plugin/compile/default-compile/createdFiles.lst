@@ -1,0 +1,3 @@
+jm/task/core/jdbc/dao/UserDao.class
+jm/task/core/jdbc/dao/UserDaoHibernateImpl.class
+jm/task/core/jdbc/model/User.class
