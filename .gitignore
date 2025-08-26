@@ -1,0 +1,16 @@
+# IDEA
+.idea/
+*.iml
+/shelf/
+/workspace.xml
+/httpRequests/
+/dataSources/
+/dataSources.local.xml
+
+# Maven
+target/
+.mvn/wrapper/
+
+# MacOS
+.DS_Store
+
