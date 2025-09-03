@@ -1,16 +1,15 @@
 package jm.task.core.jdbc.service;
 
+import java.util.List;
+
 import jm.task.core.jdbc.dao.UserDao;
 import jm.task.core.jdbc.model.User;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.List;
 
 import static jm.task.core.jdbc.dao.UserDaoJDBCImpl.logger;
 
+
 public class UserServiceImpl implements UserService {
-    private static final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
+    
     private final UserDao userDao;
     
     public UserServiceImpl(UserDao userDao) {
@@ -49,7 +48,7 @@ public class UserServiceImpl implements UserService {
                 throw new IllegalArgumentException("Возраст не корректный");
             }
             userDao.saveUser(name, lastName, age);
-            logger.info("Добавлен ользователь '{}' '{}' , возраст {}", name, lastName, age);
+            logger.info("Добавлен пользователь '{}' '{}' , возраст {}", name, lastName, age);
         } catch (Exception e) {
             logger.error(" При сохранении пользователя произошла ошибка '{} {}': {}", name, lastName, e.getMessage(), e);
             throw e;
@@ -60,7 +59,7 @@ public class UserServiceImpl implements UserService {
     public void removeUserById(long id) {
         try {
             if (id <= 0) {
-                throw new IllegalArgumentException("ID отрицательное число, должен быть положительным");
+                throw new IllegalArgumentException("ID не бывает отрицателным");
             }
             userDao.removeUserById(id);
             logger.info("Пользователь с ID {}  удалён.", id);
@@ -86,7 +85,7 @@ public class UserServiceImpl implements UserService {
     public void cleanUsersTable() {
         try {
             userDao.cleanUsersTable();
-            logger.info("Таблица пользователей  чистая.");
+            logger.info("Таблица  чистая.");
         } catch (Exception e) {
             logger.error("Ошибка при очистке таблицы: {}", e.getMessage(), e);
             throw e;
